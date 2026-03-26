@@ -44,9 +44,9 @@ git push -u origin main
 
 | Key | Value |
 |-----|-------|
-| `DB_URL` | `jdbc:mysql://mysql-14d826-anurag-92ac.b.aivencloud.com:15866/defaultdb?sslMode=REQUIRED` |
-| `DB_USER` | `avnadmin` |
-| `DB_PASSWORD` | `AVNS_V7uD1U7AVIUxV6x2YVp` |
+| `DB_URL` | `jdbc:mysql://YOUR_AIVEN_HOST:YOUR_AIVEN_PORT/YOUR_DB?sslMode=REQUIRED` |
+| `DB_USER` | `YOUR_AIVEN_USER` |
+| `DB_PASSWORD` | `YOUR_AIVEN_PASSWORD` |
 | `JWT_SECRET` | Generate a random 32+ char string (e.g., use `openssl rand -base64 32`) |
 | `CORS_ALLOWED_ORIGINS` | Leave blank for now, update after frontend URL is available |
 | `SERVER_PORT` | `8080` |
