@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: hospital-bed-tracker-api
+    runtime: java
+    runtimeVersion: 17
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/tracker-1.0.0.jar
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: JAVA_TOOL_OPTIONS
+        value: -Xmx512m
+      - key: DB_URL
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://your-vercel-frontend-url.vercel.app
